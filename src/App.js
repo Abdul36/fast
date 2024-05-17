@@ -1,14 +1,10 @@
-import logo from "./logo.svg";
 import "./App.css";
 
-// import CalendarComponent from "./components/Calender";
-import Subscribe from "./components/Subscribe";
-
+import About from "./components/About";
 function App() {
   return (
     <div className="App">
-      {/* <CalendarComponent /> */}
-      <Subscribe />
+      <About />
     </div>
   );
 }

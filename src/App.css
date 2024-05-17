@@ -237,3 +237,15 @@ button.btg {
 .col-sm-11.col-12 {
   margin-left: -60px;
 }
+
+
+.team-cards {
+  background-image: url('./Assets//Images/globe2.png');
+  min-height: auto;
+}
+
+.md.cards.card {
+  border-radius: 0px;
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
