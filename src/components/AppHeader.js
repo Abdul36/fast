@@ -7,9 +7,26 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 import logo from "../Assets/Images/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
+    // <nav>
+    //   <ul>
+    //     <li>
+    //       <Link to="/">Home</Link>
+    //     </li>
+    //     <li>
+    //       <Link to="/about">About</Link>
+    //     </li>
+    //     <li>
+    //       <Link to="/contact">Contact</Link>
+    //     </li>
+    //     <li>
+    //       <Link to="/JobList">Job List</Link>
+    //     </li>
+    //   </ul>
+    // </nav>
     <section>
       {/* NavBar */}
       <Container fluid>
@@ -38,13 +55,15 @@ export default function Header() {
                 style={{ marginLeft: "150px" }}
               />
               <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="ms-auto">
-                  <Nav.Link href="#home">Home</Nav.Link>
-                  <Nav.Link href="#about">About</Nav.Link>
-                  <Nav.Link href="#job">Job List</Nav.Link>
-                  <Nav.Link href="#contact">Contact</Nav.Link>
+                {/* <Nav className="ms-auto"> */}
+                <Link to="/">Home</Link>
+                <Link to="/About">About</Link>
+                <Link to="/JobList">Job List</Link>
+                <Link to="/Contact">Contact</Link>
+                <Link to="/Get">
                   <button className="btg">Get In Touch</button>
-                </Nav>
+                </Link>
+                {/* </Nav> */}
               </Navbar.Collapse>
             </Navbar>
           </Col>

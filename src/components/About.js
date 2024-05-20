@@ -30,7 +30,7 @@ import graduation from "../Assets/Images/graduation.png";
 import counseling from "../Assets/Images/counseling.png";
 import inter from "../Assets/Images/inter.png";
 
-export default function About() {
+function About() {
   return (
     <div>
       <Header />
@@ -512,3 +512,5 @@ export default function About() {
     </div>
   );
 }
+
+export default About;

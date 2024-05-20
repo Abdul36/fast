@@ -45,12 +45,12 @@ export default function News() {
                 )}
                 <div onClick={toggleShowMore} style={{ cursor: "pointer" }}>
                   <p className="text-primary">Learn More</p>
-                  <Image
+                  {/* <Image
                     src={rarrow}
                     fluid
                     className="mx-auto d-block"
-                    style={{ marginTop: "-41px>" }}
-                  />
+                    style={{ marginTop: "-42px" }}
+                  /> */}
                 </div>
               </div>
             </div>
@@ -78,12 +78,12 @@ export default function News() {
                 )}
                 <div onClick={toggleShowMore} style={{ cursor: "pointer" }}>
                   <p className="text-primary">Learn More</p>
-                  <Image
+                  {/* <Image
                     src={rarrow}
                     fluid
                     className="mx-auto d-block"
-                    style={{ marginTop: "-41px>" }}
-                  />
+                    style={{ marginTop: "-42px" }}
+                  /> */}
                 </div>
               </div>
             </div>
@@ -115,12 +115,12 @@ export default function News() {
                 )}
                 <div onClick={toggleShowMore} style={{ cursor: "pointer" }}>
                   <p className="text-primary">Learn More</p>
-                  <Image
+                  {/* <Image
                     src={rarrow}
                     fluid
                     className="mx-auto d-block"
-                    style={{ marginTop: "-41px>" }}
-                  />
+                    style={{ marginTop: "-41px" }}
+                  /> */}
                 </div>
               </div>
             </div>
@@ -148,12 +148,12 @@ export default function News() {
                 )}
                 <div onClick={toggleShowMore} style={{ cursor: "pointer" }}>
                   <p className="text-primary">Learn More</p>
-                  <Image
+                  {/* <Image
                     src={rarrow}
                     fluid
                     className="mx-auto d-block"
-                    style={{ marginTop: "-41px>" }}
-                  />
+                    style={{ marginTop: "-41px" }}
+                  /> */}
                 </div>
               </div>
             </div>

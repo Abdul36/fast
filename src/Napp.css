@@ -218,15 +218,16 @@ button.btg {
 }
 
 /* Home Page */
-/* 
+
 .card1 {
   margin-left: 10px;
   margin-bottom: 10px;
+  /* width: auto; */
   width: 24%;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   background-color: #fff;
-} */
+}
 
 @media (max-width: 991.98px) {
   .flex-lg-row {
@@ -255,114 +256,16 @@ button.btg {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* Home Page */
-
-.card1 {
-  margin-left: 10px;
-  margin-bottom: 10px;
-  /* width: 30%; */
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  background-color: #fff;
-}
-
-.d-flex.flex-column.flex-md-row.justify-content-center.justify-content-lg-start.gap-3 {
-  position: relative;
-  top: -49px;
-}
-
 @media only screen and (max-width: 575px) {
+
   .card1 {
     margin-left: 10px;
     margin-bottom: 10px;
-    width: 80% !important;
-    /* Set width to 100% */
+    /* width: auto; */
+    width: 100%;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     background-color: #fff;
   }
 
-  .cardss {
-    padding-top: 50px;
-  }
-
-  .cardss2 {
-    padding-top: 40px;
-  }
-
-  .d-flex.flex-column.flex-md-row.justify-content-center.justify-content-lg-start.gap-3 {
-    position: relative;
-    top: 0px;
-    padding-top: 30px;
-  }
-}
-
-/* For Medium */
-@media only screen and (min-width: 576px) and (max-width: 991px) {
-  .card1 {
-    margin-left: 10px;
-    margin-bottom: 10px;
-    width: 80% !important;
-    /* Set width to 100% */
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    background-color: #fff;
-  }
-
-  .cardss {
-    padding-top: 50px;
-  }
-
-  .cardss2 {
-    padding-top: 40px;
-  }
-
-  .d-flex.flex-column.flex-md-row.justify-content-center.justify-content-lg-start.gap-3 {
-    position: relative;
-    top: 0px;
-    padding-top: 30px;
-  }
-}
-
-/* Cards CCarousel */
-.carousel-indicators [data-bs-target] {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 30px;
-  height: 3px;
-  padding: 0;
-  margin-right: 3px;
-  margin-left: 3px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: #f00;
-  background-clip: padding-box;
-  border: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  opacity: .5;
-  transition: opacity .6s ease;
-}
-
-
-@media only screen and (min-width: 576px) {
-  .carsouse {
-    max-width: 434px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .carsouse {
-    background-color: #f00;
-  }
 }

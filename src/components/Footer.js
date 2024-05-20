@@ -7,7 +7,7 @@ import globe from "../Assets/Images/globe.png";
 import insta from "../Assets/Images/insta.png";
 import facebook from "../Assets/Images/facebook.png";
 
-export default function Footer() {
+function Footer() {
   return (
     <div>
       {/* Footer */}
@@ -18,16 +18,15 @@ export default function Footer() {
             <div className="d-md-flex justify-content-center align-items-start">
               <div className="d-flex flex-column">
                 <Image src={flogo} fluid className="mx-auto d-block" />
-
                 <p style={{ color: "white" }}>
                   Lorem ipsum dolor sit amet, consectetuer <br />
                   adipiscing elit. Aenean commodo ligula
-                  <br /> eget dolor. Aenean massa.Lorem ipsum dolor <br /> sit
+                  <br /> eget dolor. Aenean massa. Lorem ipsum dolor <br /> sit
                   amet, consectetuer adipiscing elit.
                   <br /> Aenean commodo ligula eget dolor.
                   <br /> Aenean massa.
                 </p>
-                <div className="d-flex flex-wrap gap-3">
+                <div className="d-none d-md-flex flex-wrap gap-3">
                   <div className="box">
                     <Image src={github} fluid className="mx-auto d-block" />
                   </div>
@@ -107,6 +106,20 @@ export default function Footer() {
                   </li>
                 </ul>
               </div>
+              <div className="d-md-none d-flex gap-3 ms-md-4 mt-4">
+                <div className="box">
+                  <Image src={github} fluid className="mx-auto d-block" />
+                </div>
+                <div className="box">
+                  <Image src={globe} fluid className="mx-auto d-block" />
+                </div>
+                <div className="box">
+                  <Image src={insta} fluid className="mx-auto d-block" />
+                </div>
+                <div className="box">
+                  <Image src={facebook} fluid className="mx-auto d-block" />
+                </div>
+              </div>
             </div>
             <hr style={{ backgroundColor: "white" }} />
             <p className="text-center" style={{ color: "white" }}>
@@ -119,3 +132,4 @@ export default function Footer() {
     </div>
   );
 }
+export default Footer;
