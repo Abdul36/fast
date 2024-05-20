@@ -3,6 +3,7 @@ import { Container, Row, Col, Image, Form, Button } from "react-bootstrap";
 // Images Imports
 import Header from "./AppHeader";
 import art from "../Assets/Images/art.png";
+
 import location from "../Assets/Images/location.png";
 import website from "../Assets/Images/website.png";
 import phone from "../Assets/Images/phone.png";
@@ -22,9 +23,9 @@ function Contact() {
         >
           <Row className="align-items-center">
             {/* Left column for text */}
-            <Col xs={12} sm={7} className="mt-3 mt-sm-0">
+            <Col xs={12} sm={6} className="mt-3 mt-sm-0">
               <h2 className="text-center" style={{ color: "#0d6efd" }}>
-                <b>Contact</b>{" "}
+                <b>About Us</b>{" "}
               </h2>
               <p
                 className="text-justify"
@@ -41,7 +42,7 @@ function Contact() {
             {/* Right column for image */}
             <Col
               xs={12}
-              sm={5}
+              sm={6}
               className="text-center text-sm-start"
               style={{
                 backgroundColor: "#0d6efd",
@@ -59,7 +60,7 @@ function Contact() {
                 src={art}
                 fluid
                 className="mx-auto d-block"
-                style={{ position: "relative", left: "-80px", width: "100%" }}
+                style={{ position: "relative", width: "70%" }}
               />
             </Col>
           </Row>

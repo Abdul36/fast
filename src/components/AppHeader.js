@@ -5,46 +5,31 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { Link } from "react-router-dom";
+// import { HiMenu } from "react-icons/hi"; // Import the desired icon from react-icons
 
 import logo from "../Assets/Images/logo.png";
-import { Link } from "react-router-dom";
+import graduation from "../Assets/Images/graduation.png";
 
 export default function Header() {
   return (
-    // <nav>
-    //   <ul>
-    //     <li>
-    //       <Link to="/">Home</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/about">About</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/contact">Contact</Link>
-    //     </li>
-    //     <li>
-    //       <Link to="/JobList">Job List</Link>
-    //     </li>
-    //   </ul>
-    // </nav>
     <section>
-      {/* NavBar */}
       <Container fluid>
         <Row className="align-items-center">
           <Col
-            xs={12}
-            sm={6}
+            xs={6}
+            lg={6}
             className="text-center text-sm-start"
             style={{ backgroundColor: "#F8FBFF" }}
           >
             <Image src={logo} fluid className="mx-auto d-block" />
           </Col>
-          <Col xs={12} sm={6} className="mt-3 mt-sm-0">
+          <Col xs={6} lg={6} className="mt-3 mt-sm-0 NavItems">
             <Navbar
               variant="dark"
               expand="md"
               style={{
-                background: "transparent",
+                background: "red",
                 position: "relative",
                 zIndex: "100",
               }}
@@ -53,17 +38,28 @@ export default function Header() {
                 aria-controls="basic-navbar-nav"
                 className="ml-5"
                 style={{ marginLeft: "150px" }}
-              />
+              >
+                {" "}
+                <Image src={graduation} fluid className="mx-auto d-block" />
+              </Navbar.Toggle>
               <Navbar.Collapse id="basic-navbar-nav">
-                {/* <Nav className="ms-auto"> */}
-                <Link to="/">Home</Link>
-                <Link to="/About">About</Link>
-                <Link to="/JobList">Job List</Link>
-                <Link to="/Contact">Contact</Link>
-                <Link to="/Get">
-                  <button className="btg">Get In Touch</button>
-                </Link>
-                {/* </Nav> */}
+                <Nav className="flex-column flex-sm-row">
+                  <Link className="navLinks ps-4" to="/">
+                    Home
+                  </Link>
+                  <Link className="navLinks ps-4" to="/About">
+                    About
+                  </Link>
+                  <Link className="navLinks ps-4" to="/JobList">
+                    Job List
+                  </Link>
+                  <Link className="navLinks ps-4" to="/Contact">
+                    Contact
+                  </Link>
+                  <Link className="navLinks ps-4" to="/Get">
+                    <button className="btg">Get In Touch</button>
+                  </Link>
+                </Nav>
               </Navbar.Collapse>
             </Navbar>
           </Col>

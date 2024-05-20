@@ -18,6 +18,7 @@ import Lists from "./Counter";
 // Images Imports
 
 import jobl from "../Assets/Images/jobl.png";
+import board from "../Assets/Images/board.png";
 import round from "../Assets/Images/round.png";
 import location from "../Assets/Images/location.png";
 import mail from "../Assets/Images/mail.png";
@@ -28,6 +29,7 @@ function JobList() {
   return (
     <div>
       <Header />
+      {/* Hero */}
       <section>
         <Container
           fluid
@@ -36,9 +38,9 @@ function JobList() {
         >
           <Row className="align-items-center">
             {/* Left column for text */}
-            <Col xs={12} sm={7} className="mt-3 mt-sm-0">
+            <Col xs={12} sm={6} className="mt-3 mt-sm-0">
               <h2 className="text-center" style={{ color: "#0d6efd" }}>
-                <b>Job List</b>{" "}
+                <b>About Us</b>{" "}
               </h2>
               <p
                 className="text-justify"
@@ -55,7 +57,7 @@ function JobList() {
             {/* Right column for image */}
             <Col
               xs={12}
-              sm={5}
+              sm={6}
               className="text-center text-sm-start"
               style={{
                 backgroundColor: "#0d6efd",
@@ -70,10 +72,10 @@ function JobList() {
               <br></br>
               <br></br>
               <Image
-                src={jobl}
+                src={board}
                 fluid
                 className="mx-auto d-block"
-                style={{ position: "relative", left: "-10px", width: "100%" }}
+                style={{ position: "relative", width: "70%" }}
               />
             </Col>
           </Row>
