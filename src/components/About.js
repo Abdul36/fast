@@ -269,7 +269,11 @@ function About() {
       <section>
         <Container>
           <Row>
-            <Col md className="text1" style={{ position: "relative" }}>
+            <Col
+              md
+              className="text1 d-none d-md-block"
+              style={{ position: "relative" }}
+            >
               <Image
                 src={mask3}
                 fluid
