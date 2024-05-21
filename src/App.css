@@ -357,3 +357,143 @@ button.btg {
     background-color: #f00;
   }
 }
+
+
+
+
+.herof {
+  padding: 13%;
+  padding-top: 10px;
+}
+
+h4.heroh {
+  margin-left: 36%;
+  margin-top: 25%;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .herof {
+    padding: 0%;
+  }
+
+  .heros {
+    position: relative;
+
+  }
+
+  .heroimg {
+    position: relative;
+    padding-top: 170px;
+    left: -70%;
+  }
+
+  .himg {
+    position: relative;
+    padding-top: 300px;
+    left: -70%;
+  }
+
+  .tbtns.d-flex.align-items-center {
+    margin-left: 0px;
+  }
+
+  .quality {
+    position: relative;
+  }
+
+  .quality1 {
+    position: relative;
+    top: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .herof {
+    padding: 0%;
+  }
+
+  .heros {
+    position: relative;
+
+  }
+
+  .heroimg {
+    position: relative;
+    padding-top: 220px;
+    left: -70%;
+  }
+
+  .himg {
+    position: relative;
+    padding-top: 300px;
+    left: -70%;
+  }
+
+
+  .quality {
+    position: relative;
+  }
+
+  .quality1 {
+    position: relative;
+    top: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .herof {
+    padding: 0%;
+  }
+
+  .heros {
+    position: relative;
+
+  }
+
+  .heroimg {
+    position: relative;
+    padding-top: 260px;
+    left: -70%;
+  }
+
+
+  .himg {
+    position: relative;
+    padding-top: 250px;
+    left: -70%;
+  }
+
+  .quality {
+    position: relative;
+  }
+
+  .quality1 {
+    position: relative;
+    top: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 40px;
+  }
+}
+
+
+/* Home Button */
+button.homeb {
+  padding: 7px 15px;
+  border: 1px solid#0d6efd;
+  border-radius: 9px;
+}
+
+button.homeb:hover {
+  border: 2px solid#0d6efd;
+}

@@ -24,12 +24,11 @@ export default function Header() {
           >
             <Image src={logo} fluid className="mx-auto d-block" />
           </Col>
-          <Col xs={6} lg={6} className="mt-3 mt-sm-0 NavItems">
+          <Col xs={6} lg={6} className="mt-3 mt-sm-0 NavItems bg-primary">
             <Navbar
               variant="dark"
               expand="md"
               style={{
-                background: "red",
                 position: "relative",
                 zIndex: "100",
               }}

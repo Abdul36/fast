@@ -12,6 +12,8 @@ import Header from "./components/AppHeader";
 import Contact from "./components/Contact";
 import About from "./components/About";
 import JobList from "./components/JobList";
+import HeroT from "./components/HeroT";
+import Get from "./components/Get";
 
 // import Header from "./components/AppHeader";
 // import Homee from "./components/Homee";
@@ -23,11 +25,12 @@ function App() {
   return (
     <BrowserRouter>
       {/* <Header /> */}
+      <Get />
       <Routes>
-        <Route path="/" exact element={<Homee />} />
+        {/* <Route path="/" exact element={<Homee />} />
         <Route path="/About" element={<About />} />
         <Route path="/JobList" element={<JobList />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Contact" element={<Contact />} /> */}
       </Routes>
     </BrowserRouter>
   );

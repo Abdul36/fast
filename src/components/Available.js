@@ -15,12 +15,12 @@ export default function Available() {
     <section>
       <div style={{ padding: "20px" }}>
         <Container>
-          <p
-            className="text-center"
+          <h5
+            className="text-center pt-3"
             style={{ color: "#2B72EE", marginBottom: "20px" }}
           >
             Jobs are Available
-          </p>
+          </h5>
           <h4 className="text-center">Job Recommendations You Might Need</h4>
           <p className="text-center">
             Orci varius natoque penatibus et magnis dis parturient montes,
@@ -35,7 +35,7 @@ export default function Available() {
               <Col
                 key={index}
                 xs={12}
-                sm={6}
+                sm={12}
                 md={4}
                 style={{ marginBottom: "20px" }}
               >
@@ -93,7 +93,7 @@ export default function Available() {
                 <Col
                   key={index}
                   xs={12}
-                  sm={6}
+                  sm={12}
                   md={4}
                   style={{ marginBottom: "20px" }}
                 >
@@ -123,7 +123,12 @@ export default function Available() {
                             className="mx-auto d-block "
                             style={{ marginRight: "10px" }}
                           />
-                          <p className="m-0 ps-2">2 Days ago</p>
+                          <p
+                            className="m-0 ps-2"
+                            style={{ whiteSpace: "nowrap" }}
+                          >
+                            2 Days ago
+                          </p>
                         </div>
                         <button
                           className="apply bg-primary ms-5 pt-2"
@@ -131,6 +136,7 @@ export default function Available() {
                             padding: "7px 15px",
                             border: "none",
                             borderRadius: "10px",
+                            whiteSpace: "nowrap",
                           }}
                         >
                           Apply Now
@@ -145,7 +151,7 @@ export default function Available() {
                 <Col
                   key={index}
                   xs={12}
-                  sm={6}
+                  sm={12}
                   md={4}
                   style={{ marginBottom: "20px" }}
                 >
@@ -175,7 +181,12 @@ export default function Available() {
                             className="mx-auto d-block "
                             style={{ marginRight: "10px" }}
                           />
-                          <p className="m-0 ps-2">2 Days ago</p>
+                          <p
+                            className="m-0 ps-2"
+                            style={{ whiteSpace: "nowrap" }}
+                          >
+                            2 Days ago
+                          </p>
                         </div>
                         <button
                           className="apply bg-primary ms-5 pt-2"
@@ -183,6 +194,7 @@ export default function Available() {
                             padding: "7px 15px",
                             border: "none",
                             borderRadius: "10px",
+                            whiteSpace: "nowrap",
                           }}
                         >
                           Apply Now
@@ -193,7 +205,6 @@ export default function Available() {
                 </Col>
               ))}
           </Row>
-          {/* Show more button */}
           <Row className="justify-content-center mt-3">
             <Col xs="auto">
               <Image

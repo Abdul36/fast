@@ -33,53 +33,53 @@ export default function Homee() {
   return (
     <div>
       <Header />
-      {/* Hero */}
       <section>
-        <Container
-          fluid
-          style={{ margin: "0px", minHeight: "auto" }}
-          className="pos"
-        >
-          <Row className="align-items-center">
-            {/* Left column for text */}
-            <Col xs={12} sm={6} className="mt-3 mt-sm-0">
-              <h2 className="text-center" style={{ color: "#0d6efd" }}>
-                <b>About Us</b>{" "}
-              </h2>
-              <p
-                className="text-justify"
-                style={{ paddingLeft: "150px", paddingRight: "20px" }}
+        <Container fluid>
+          <Row style={{ position: "relative" }}>
+            <Col className="herof bg-white ">
+              <h4
+                className="heroh heroh1 text-primary"
+                style={{ marginLeft: "46px" }}
               >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit{" "}
-                <br></br>
-                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                Find Your <br></br> Right Job With Us
+              </h4>
+              <p className="text-justify ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <br></br> Ut elit tellus, luctus nec ullamcorper mattis,
+                pulvinar dapibus leo.
               </p>
-              <br></br>
-              <br></br>
-              <br></br>
+              <div
+                className="tbtns d-flex align-items-center"
+                style={{ marginLeft: "47px" }}
+              >
+                {" "}
+                {/* Ensure buttons stay on the same line */}
+                <button
+                  className="homeb bg-primary text-white"
+                  style={{ whiteSpace: "nowrap" }}
+                >
+                  Find Job Now
+                </button>
+                <button
+                  className="homeb bg-white text-primary ms-4"
+                  style={{ whiteSpace: "nowrap" }}
+                >
+                  Learn More
+                </button>
+              </div>
             </Col>
-            {/* Right column for image */}
+            {/* Image Section */}
             <Col
-              xs={12}
-              sm={6}
-              className="text-center text-sm-start"
-              style={{
-                backgroundColor: "#0d6efd",
-                position: "relative",
-                top: "-70px",
-                paddingRight: "0",
-                paddingLeft: "0",
-              }}
+              className="heros bg-primary"
+              style={{ marginTop: "-5px" }}
+              // style={{ position: "relative", top: "-70px" }}
             >
               <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
               <Image
-                src={board}
+                src={hlogo}
                 fluid
-                className="mx-auto d-block"
-                style={{ position: "relative", width: "70%" }}
+                className="heroimg himg mx-auto d-block"
+                style={{ position: "relative", right: "95px" }}
               />
             </Col>
           </Row>
@@ -87,15 +87,18 @@ export default function Homee() {
       </section>
       {/* Cards */}
       <section>
-        <Container style={{ position: "relative" }}>
-          <div className="d-flex flex-column flex-md-row justify-content-center justify-content-lg-start gap-3">
+        <Container className="quality" style={{ position: "relative" }}>
+          <div
+            className="d-flex flex-column flex-md-row justify-content-center justify-content-lg-start gap-3 quality1"
+            style={{ position: "relative", top: "-50px" }}
+          >
             <div
               className="card1 shadow"
               style={{
                 width: "25%",
                 padding: "20px",
-                position: "relative",
-                Top: "-40px",
+                // position: "relative",
+                // Top: "-118px",
               }}
             >
               <Image

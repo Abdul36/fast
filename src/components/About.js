@@ -34,54 +34,24 @@ function About() {
   return (
     <div>
       <Header />
-      {/* Hero */}
       <section>
-        <Container
-          fluid
-          style={{ margin: "0px", minHeight: "auto" }}
-          className="pos"
-        >
-          <Row className="align-items-center">
-            {/* Left column for text */}
-            <Col xs={12} sm={6} className="mt-3 mt-sm-0">
-              <h2 className="text-center" style={{ color: "#0d6efd" }}>
-                <b>About Us</b>{" "}
-              </h2>
-              <p
-                className="text-justify"
-                style={{ paddingLeft: "150px", paddingRight: "20px" }}
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit{" "}
-                <br></br>
+        <Container fluid>
+          <Row style={{ position: "relative" }}>
+            <Col className="herof bg-white ">
+              <h4 className="heroh">About Us</h4>
+              <p className="text-justify ps-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
               </p>
-              <br></br>
-              <br></br>
-              <br></br>
             </Col>
-            {/* Right column for image */}
+            {/* Image Section */}
             <Col
-              xs={12}
-              sm={6}
-              className="text-center text-sm-start"
-              style={{
-                backgroundColor: "#0d6efd",
-                position: "relative",
-                top: "-70px",
-                paddingRight: "0",
-                paddingLeft: "0",
-              }}
+              className="heros bg-primary"
+              style={{ marginTop: "-5px" }}
+              // style={{ position: "relative", top: "-70px" }}
             >
               <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <Image
-                src={board}
-                fluid
-                className="mx-auto d-block"
-                style={{ position: "relative", width: "70%" }}
-              />
+              <Image src={board} fluid className="heroimg mx-auto d-block" />
             </Col>
           </Row>
         </Container>
@@ -89,7 +59,7 @@ function About() {
       {/* About Us with Images */}
       <section>
         <Container>
-          <Row className="flex-column-reverse flex-md-row">
+          <Row className="flex-column-reverse flex-md-row pt-5">
             <Col md className="order-2">
               <h4 style={{ color: "#2B72EE" }}>About Us</h4>
               <h2>
