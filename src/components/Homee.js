@@ -16,8 +16,8 @@ import Lists from "./Counter";
 import News from "./News";
 
 import hlogo from "../Assets/Images/hlogo.png";
-import board from "../Assets/Images/board.png";
-import paper from "../Assets/Images/paper.png";
+// import board from "../Assets/Images/board.png";
+// import paper from "../Assets/Images/paper.png";
 import charter from "../Assets/Images/charter.png";
 import certificate from "../Assets/Images/certificate.png";
 import business from "../Assets/Images/business.png";
@@ -36,7 +36,7 @@ export default function Homee() {
       <section>
         <Container fluid>
           <Row style={{ position: "relative" }}>
-            <Col className="herof bg-white ">
+            <Col className="herof " style={{ backgroundColor: "#f8fbff" }}>
               <h4
                 className="heroh heroh1 text-primary"
                 style={{ marginLeft: "46px" }}
@@ -79,7 +79,7 @@ export default function Homee() {
                 src={hlogo}
                 fluid
                 className="heroimg himg mx-auto d-block"
-                style={{ position: "relative", right: "95px" }}
+                style={{ position: "relative", right: "0px" }}
               />
             </Col>
           </Row>

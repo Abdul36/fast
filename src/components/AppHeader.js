@@ -55,7 +55,7 @@ export default function Header() {
                   <Link className="navLinks ps-4" to="/Contact">
                     Contact
                   </Link>
-                  <Link className="navLinks ps-4" to="/Get">
+                  <Link className="navLinks ps-4" to="/Cal">
                     <button className="btg">Get In Touch</button>
                   </Link>
                 </Nav>

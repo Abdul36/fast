@@ -32,7 +32,7 @@ function JobList() {
       <section>
         <Container fluid>
           <Row style={{ position: "relative" }}>
-            <Col className="herof bg-white ">
+            <Col className="herof  " style={{ backgroundColor: "#f8fbff" }}>
               <h4 className="heroh">Job List</h4>
               <p className="text-justify ps-5">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
