@@ -1,15 +1,9 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Container, Row, Col, Image, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-// import { HiMenu } from "react-icons/hi"; // Import the desired icon from react-icons
 
 import logo from "../Assets/Images/logo.png";
-import graduation from "../Assets/Images/graduation.png";
+import menu from "../Assets/Images/menu.png";
 
 export default function Header() {
   return (
@@ -24,13 +18,22 @@ export default function Header() {
           >
             <Image src={logo} fluid className="mx-auto d-block" />
           </Col>
-          <Col xs={6} lg={6} className="mt-3 mt-sm-0 NavItems bg-primary">
+          <Col
+            xs={6}
+            lg={6}
+            className="mt-3 mt-sm-0 NavItems"
+            style={{
+              backgroundColor: "#FFFFFF", // Set background color to white for medium, small, and extra-small screens
+              backgroundColor: "#0d6efd", // Set background color to blue for large, extra-large, and double extra-large screens
+            }}
+          >
             <Navbar
               variant="dark"
               expand="md"
               style={{
                 position: "relative",
                 zIndex: "100",
+                backgroundColor: "inherit", // Remove background color from Navbar to inherit the parent's background color
               }}
             >
               <Navbar.Toggle
@@ -38,24 +41,39 @@ export default function Header() {
                 className="ml-5"
                 style={{ marginLeft: "150px" }}
               >
-                {" "}
-                <Image src={graduation} fluid className="mx-auto d-block" />
+                <Image src={menu} fluid className="mx-auto d-block" />
               </Navbar.Toggle>
               <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="flex-column flex-sm-row">
-                  <Link className="navLinks ps-4" to="/">
+                <Nav className="flex-column flex-md-row">
+                  <Link className="navLinks ps-4 text-white" to="/">
                     Home
                   </Link>
-                  <Link className="navLinks ps-4" to="/About">
+                  <hr
+                    className="d-md-none my-1 mx-4"
+                    style={{ borderColor: "#5F5F5F" }}
+                  />{" "}
+                  <Link className="navLinks ps-4 text-white" to="/About">
                     About
                   </Link>
-                  <Link className="navLinks ps-4" to="/JobList">
+                  <hr
+                    className="d-md-none my-1 mx-4"
+                    style={{ borderColor: "#5F5F5F" }}
+                  />{" "}
+                  <Link className="navLinks ps-4 text-white" to="/JobList">
                     Job List
                   </Link>
-                  <Link className="navLinks ps-4" to="/Contact">
+                  <hr
+                    className="d-md-none my-1 mx-4"
+                    style={{ borderColor: "#5F5F5F" }}
+                  />{" "}
+                  <Link className="navLinks ps-4 text-white" to="/Contact">
                     Contact
                   </Link>
-                  <Link className="navLinks ps-4" to="/Cal">
+                  <hr
+                    className="d-md-none my-1 mx-4"
+                    style={{ borderColor: "#5F5F5F" }}
+                  />{" "}
+                  <Link className="navLinks ps-4 text-white" to="/Get">
                     <button className="btg">Get In Touch</button>
                   </Link>
                 </Nav>

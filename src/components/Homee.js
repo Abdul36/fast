@@ -43,7 +43,7 @@ export default function Homee() {
               >
                 Find Your <br></br> Right Job With Us
               </h4>
-              <p className="text-justify ">
+              <p className="text-justify " style={{ marginLeft: "46px" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 <br></br> Ut elit tellus, luctus nec ullamcorper mattis,
                 pulvinar dapibus leo.
